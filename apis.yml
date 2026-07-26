@@ -1,8 +1,27 @@
 aid: distance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/distance.png
 name: Distance
-description: 'Distance is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Distance (Distance Technologies) is a Helsinki-based frontier-tech company pioneering
+  glasses-free extended reality (XR) built on computational optics and lightfield technology. Its
+  systems turn transparent surfaces — vehicle windshields, aircraft canopies, and head-mounted visors
+  — into intelligent heads-up displays without screens, overlays, or wearable glasses. Products include
+  the Acuity visual-intelligence platform and Acuity OS for defense, the Field Operator HUD (FOH)
+  head-mounted system in field trials across NATO countries, and panoramic lightfield HUDs for
+  automotive ADAS and navigation. Distance is backed by GV (Google Ventures) and partners with defense,
+  aerospace, and automotive organizations including Kia, Supacat, Galvion, Patria, and General Dynamics.
+  The company publishes no public API or developer program; this profile tracks its identity and public
+  web surface in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/distance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Frontier Tech
+- Extended Reality
+- Augmented Reality
+- Computational Optics
+- Lightfield
+- Heads-Up Display
+- Defense
+- Automotive
+- Aerospace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/distance-domain-security.yml
 - type: Website
   url: https://distance.tech
+- type: Blog
+  url: https://distance.tech/news
+- type: PrivacyPolicy
+  url: https://distance.tech/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
